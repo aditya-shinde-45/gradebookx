@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test CSV Upload</title>
+</head>
+<body>
+    <h2>Test Student CSV Upload</h2>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <div>
+            <label>Course:</label>
+            <select id="courseId" required>
+                <option value="">Select Course</option>
+                <option value="NAPS-ITI">NAPS-ITI - NAPS ITI</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Division:</label>
+            <select id="division" required>
+                <option value="">Select Division</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Semester:</label>
+            <select id="semester" required>
+                <option value="">Select Semester</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>CSV File:</label>
+            <input type="file" id="csvFile" accept=".csv" required>
+        </div>
+        <br>
+        <button type="submit">Upload Students</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData();
+            formData.append('csvFile', document.getElementById('csvFile').files[0]);
+            formData.append('courseId', document.getElementById('courseId').value);
+            formData.append('division', document.getElementById('division').value);
+            formData.append('semester', document.getElementById('semester').value);
+            
+            try {
+                const response = await fetch('http://localhost:5000/api/students/upload-csv', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                document.getElementById('result').innerHTML = '<pre>' + JSON.stringify(result, null, 2) + '</pre>';
+            } catch (error) {
+                document.getElementById('result').innerHTML = '<p style="color: red;">Error: ' + error.message + '</p>';
+            }
+        });
+    </script>
+</body>
+</html>
