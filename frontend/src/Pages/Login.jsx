@@ -82,15 +82,15 @@ const Login = () => {
     <div className="bg-gray-50 flex flex-col min-h-screen font-['Inter']">
       <header className="bg-gray-100 py-4 px-6 md:px-10">
         <div className="container mx-auto flex items-center">
-          <span className="material-icons text-gray-700 text-3xl mr-3">auto_stories</span>
-          <h1 className="text-2xl font-bold text-gray-800">depclickzfdexgft hjhkjghvgcvhbjnkjbmnbgjyfgbtest</h1>
+          <span className="material-icons text-gray-700 text-3xl mr-3">auto_ascfstories</span>
+          <h1 className="text-2xl font-bold text-gray-800">depclickzfdexgfcdast hjhkjghvgcvhbjnkjbmnbgjyfgbtest</h1>
         </div>
       </header>
 
       <main className="flex-grow flex items-center justify-center p-4">
         <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-8 space-y-6">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900">Welcome lihkjghngBack! zoroooo</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Welcomesccasaf lihkjghngBack! zoroooo</h2>
             <p className="text-gray-500 mt-2">Please sign in to access your account.</p>
           </div>
 
