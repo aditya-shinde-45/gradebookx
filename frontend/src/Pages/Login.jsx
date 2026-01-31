@@ -90,7 +90,7 @@ const Login = () => {
       <main className="flex-grow flex items-center justify-center p-4">
         <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-8 space-y-6">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900">Welcome Back!</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Welcome Back! zoro</h2>
             <p className="text-gray-500 mt-2">Please sign in to access your account.</p>
           </div>
 
