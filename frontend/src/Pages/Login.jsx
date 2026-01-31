@@ -91,7 +91,7 @@ const Login = () => {
         <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-8 space-y-6">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900"> zoroooo</h2>
-            <p className="text-gray-500 mt-2">Please sign in to access your account.</p>
+            <p className="text-gray-500 mt-2">Please bha ja.</p>
           </div>
 
           {error && <div className="text-red-600 text-sm text-center">{error}</div>}
