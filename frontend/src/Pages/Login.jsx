@@ -110,7 +110,7 @@ const Login = () => {
                 required
               >
                 <option value="">Select</option>
-                <option value="teacher">Teacher</option>
+                <option value="teacher">tiiiiiii</option>
                 <option value="admin">Admin</option>
               </select>
             </div>
