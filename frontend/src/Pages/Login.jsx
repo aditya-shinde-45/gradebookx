@@ -82,7 +82,7 @@ const Login = () => {
     <div className="bg-gray-50 flex flex-col min-h-screen font-['Inter']">
       <header className="bg-gray-100 py-4 px-6 md:px-10">
         <div className="container mx-auto flex items-center">
-          <span className="material-icons text-gray-700 text-3xl mr-3">auto_ascfstories</span>
+          <span className="material-icons text-gray-700 text-3xl mr-3">hjjhvhjv</span>
           <h1 className="text-2xl font-bold text-gray-800">sarthakhjv hjbjn zoro</h1>
         </div>
       </header>
