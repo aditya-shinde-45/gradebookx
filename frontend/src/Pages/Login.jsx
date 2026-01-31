@@ -109,8 +109,8 @@ const Login = () => {
                 className="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 p-3"
                 required
               >
-                <option value="">bkjnlk</option>
-                <option value="teacher">tiiiiiii</option>
+                <option value="">sxdfcgvhbjnhtfghbj</option>
+                <option value="teacher">tiiidxgfvjhbjnjiiii</option>
                 <option value="admin">ghcvhbj</option>
               </select>
             </div>
